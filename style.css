@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+
+header{
+    background-image: url('header.jpeg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+header h1{
+    margin: auto;
+    font-family: cursive;
+    font-size: 70px;
+}
+
+header p{
+    margin: auto;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.sec1{
+    display: flex;
+    justify-content: space-between;
+}
+.sec1-1 {
+    font-size: 30px;
+    transition: 0.3s ease;
+    background: linear-gradient(135deg, rgb(122, 32, 125), rgb(0, 234, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+.sec1-1:hover{
+    transform: scale(1.005) translateY(-5px);
+}
+.btn{
+    background: linear-gradient(135deg, rgb(122, 32, 125), rgb(0, 234, 255));
+    border-radius: 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    transition: 0.3s ease;
+    margin-top: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 20px rgba(78, 205, 255, 0.6);
+}
+.btn:hover{
+    transform: scale(1.005) translateY(-5px);
+    box-shadow: 0 0 30px rgba(78, 205, 255, 0.6)
+}
+a{
+    text-decoration: none;
+}
+.sec2{
+    display: flex;
+    justify-content: space-between;
+    background-image: url('background.avif');
+    background-size: cover;
+}
+.sec2-1 h1{
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    font-size: 80px;
+}
+.sec2-1 p{
+    font-size: 30px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+.sec2-2 img{
+    flex-direction: flex-end;
+    margin-top: 90px;
+    margin-right: 40px;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    width: 500px;
+    height: auto;
+    border: 3px solid white;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+}
+
+.sec2-2 img:hover{
+    transform: scale(1.005) translateY(-5px) rotate(-2deg);
+    box-shadow: 0 0 40px rgba(0, 234, 255, 0.6);
+}
+
+.sec2-1 button{
+    margin-bottom: 100px;
+    margin-left: 80px;
+    font-size: 30px;
+}
+#guide{
+    display: grid;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#guide h1{
+    grid-template-rows: 1fr;
+    font-size: 80px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+    border-bottom: 1px solid white;
+}
+#guide h1:hover{
+    transform: scale(1.005) translateY(-5px);
+}
+#guide img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 40px rgba(0, 234, 255, 0.6);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#guide img:hover{
+    transform: scale(1.005) translateY(-5px) rotate(2deg);
+}
+#guide h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    transition: 0.3s ease;
+    border-top: 1px solid grey;
+}
+#guide h2:hover{
+    transform: scale(1.005) translateY(-5px);
+}
+
+#guide p{
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+.step1{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+
+.step1 h2{
+    grid-column: 1;
+    grid-row: 1;
+}
+.step1 p{
+    grid-column: 1;
+    grid-row:2;
+}
+.step1 img{
+    margin-top:50px;
+    grid-column:2;
+    grid-row: span 2;
+}
+.step3{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.step3 h2{
+    grid-column: 1;
+    grid-row: 1;
+}
+.step3 p{
+    grid-column: 1;
+    grid-row: 2;
+}
+.step3 img{
+    grid-column: 2;
+    grid-row: span 2;
+    margin-top: 50px;
+}
+.step2{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.step2 h2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.step2 p{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.step2 img{
+    margin-top: 50px;
+    grid-column: 1;
+    grid-row: span 2;
+}
+.step4{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.step4 h2{
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 40px;
+}
+.step4 p{
+    grid-column: 2;
+    grid-row: 2;
+}
+.step4 img{
+    margin-top: 50px;
+    grid-column: 1;
+    grid-row: span 2;
+}
+#health{
+    display: grid;
+}
+#health h1{
+    border-bottom: 1px solid white;
+    font-size: 80px;
+    transition: 0.3s ease;
+    margin-bottom: 90px;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+#health h1:hover{
+    transform: scale(1.0005) translateY(-5px);
+}
+
+#health img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 234, 255, 0.6);
+    transition: 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#health img:hover{
+    transform: scale(1.005) translateY(-5px) rotate(-2deg);
+}
+
+#health h2{
+    font-size: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-top: 1px solid white;
+    transition: 0.3s ease;
+    margin-bottom: 50px;
+}
+
+#health h2:hover{
+    transform: scale(1.005) translateY(-5px);
+}
+
+#health p{
+    font-size: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.health1{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.health1 h2{
+    grid-column: 1;
+    grid-row: 1;
+}
+.health1 p{
+    grid-column: 1;
+    grid-row: 2;
+}
+.health1 img{
+    grid-column: 2;
+    grid-row: span 2;
+}
+.health3 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.health3 h1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.health3 p{
+    grid-column: 1;
+    grid-row: 2;
+}
+.health3 img{
+    grid-column: 2;
+    grid-row: span 2;
+}
+
+.health2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.health2 h2{
+    grid-column: 2;
+    grid-row: 1;
+}
+.health2 p{
+    grid-column: 2;
+    grid-row: 2;
+}
+.health2 img{
+    grid-column: 1;
+    grid-row: span 2;
+}
+.health4{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.health4 h2{
+    grid-row: 1;
+    grid-column: 2;
+}
+.health4 p{
+    grid-row: 2;
+    grid-column: 2;
+}
+.health4 img{
+    grid-row: span 2;
+    grid-column: 1;
+}
+#workout-h1 h1{
+    font-size: 80px;
+    border-bottom: 1px solid white;
+    margin-right: 40px;
+    transition: 0.3s ease;
+    text-align: left;
+}
+
+#workout-h1 h1:hover{
+    transform: scale(1.0005) translateY(-5px);
+}
+#workout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#workout p{
+    margin-left: 40px;
+    font-size: 30px;
+}
+#workout h2{
+    margin-left: 40px;
+    font-size: 50px;
+    transition: 0.3s ease;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+#workout h2:hover{
+    transform: scale(1.005) translateY(-5px);
+}
+
+#nutrition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+#nutrition h1{
+    font-size: 70px;
+    border-top: 1px solid white;
+    margin-top: 50px;
+    transition: 0.3s ease;
+    margin-bottom: 70px;
+}
+#nutrition h1:hover{
+    transform: scale(1.005) translateY(-5px);
+}
+
+#nutrition h2{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-size: 50px;
+    transition: 0.3s ease;
+}
+
+#nutrition h2:hover{
+    transform: scale(1.0005) translateY(-5px);
+}
+#nutrition p{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#nutrition img{
+    width: 800px;
+    height: 600px;
+    border: 5px solid rgb(0, 251, 255);
+    border-radius: 10%;
+    margin-bottom: 100px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.6);
+}
+
+#nutrition img:hover{
+    transform: scale(1.005) translateY(-5px);
+    box-shadow: 0 0 35px rgba(0, 234, 255, 0.6);
+}
+.last{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.face img, .insta img{
+    width: 80px;
+    height: 80px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.6);
+}
+.face img:hover, .insta img:hover{
+    transform: scale(1.005) translateY(-5px) rotate(-2deg);
+    box-shadow: 0 0 35px rgba(0, 234, 255, 0.6);
+}
+.face p, .insta p{
+    font-size: 15px;
+}
+
