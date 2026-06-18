@@ -31,3 +31,6 @@ Finally, my Instagram and Facebook links are inserted at the bottom.
 
 ## Why did I make this project?
 I made this project for beginners who want to go to the gym, as I am considered an expert at it.
+
+### Important Note:
+I didn't make too much commits because I still wasn't experienced enough to know this method in VS code and Github.
